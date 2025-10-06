@@ -59,7 +59,7 @@ header{
 
 .mainImagesContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 64px;
     margin-right: 64px;
