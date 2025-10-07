@@ -83,3 +83,48 @@ footer{
     color: white;
     font-weight: 700;
 }
+
+@media (max-width:480px) {
+
+    footer{
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width:444px) {
+
+ h1{
+    font-size: 24px;
+ }
+
+.logo{
+    width: 160px;
+    height: auto;
+}
+    
+
+
+.main_impressum {
+    flex: 1;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+}
+
+
+@media (max-width:376px) {
+
+ h1{
+    font-size: 18px;
+ }
+
+ .impressum {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+}
