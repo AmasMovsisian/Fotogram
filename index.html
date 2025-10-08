@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotogram</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
-    <script src="./scripts.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotogram</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
+  <script src="./scripts.js" defer></script>
 </head>
 
-<body>
-        <header>
-            <a href="./index.html">
-                <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo">
-            </a>
-        </header>
+<body onload="init()">
+  <header>
+    <a href="./index.html">
+      <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo" />
+    </a>
+  </header>
 
-    <main class="main">
+  <main class="main">
+    <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
 
-        <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
-
-        <section class="mainImagesContainer">
-            <div class="imageWrapper"><img src="./img/images/img_1.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_2.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_3.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_4.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_5.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_6.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_7.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_8.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_9.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_10.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_11.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_12.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_13.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_14.jpg" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-            <div class="imageWrapper"><img src="./img/images/img_15.png" alt="Pictures" class="mainImages" onclick="openDialog()"></div>
-        </section>
-
-        <dialog id="myImagesDialog">
-
-            <img src="./img/images/img_1.jpg" alt="">
-            
-        </dialog>
-
-    </main>
-
- <footer>
-        <a class="impressum" href="./impressum.html">Impressum / Datenschutz 
-        </a>
-    </footer>
+    <section class="mainImagesContainer" id="mainImagesContainer">
+    </section>
 
 
+   <dialog id="myImagesDialog">
+  <img id="dialogImage" src="" alt="Preview" class="dialogImage">
+  <button class="closeButton" onclick="closeDialog()">Schließen</button>
+  </dialog>
+
+<div id="mainImagesContainer"></div>
+
+  </main>
+
+  <footer>
+    <a class="impressum" href="./impressum.html">Impressum / Datenschutz</a>
+  </footer>
 </body>
 
 </html>
