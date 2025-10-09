@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+.limitation{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* Header part */
 header {
   display: flex;
@@ -128,7 +133,7 @@ dialog[open] {
 
 dialog::backdrop {
   background: #06122c6d;
-  backdrop-filter: blur(2px); /* Optional für schönen Effekt */
+  backdrop-filter: blur(2px);
 }
 
 dialog[open] {
@@ -168,13 +173,12 @@ dialog[open] {
   cursor: pointer;
   z-index: 2;
   color: #06122c7e;
-  padding-top: 100%;
-  padding-bottom: 100%;
   padding-left: 17px;
   border-radius: 10%;
   left: 0px;
   transition: all 0.7s ease;
   background-color: transparent;
+  outline: none;
 }
 
 .navButtonLeft:hover {
@@ -200,6 +204,7 @@ dialog[open] {
   right: 0px;
   transition: all 0.7s ease;
   background-color: transparent;
+  outline: none;
 }
 
 .navButtonRight:hover {

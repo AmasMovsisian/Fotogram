@@ -62,3 +62,20 @@ function prevImage() {
   dialogImage.src = `./img/images/${myImages[currentIndex]}`;
 }
 
+function checkForEscapeKey(event) {
+  if (event.key == "Escape") {
+    closeDialog();
+  }
+}
+
+function checkBackdropClick(event) {
+  if (event.target == dialogRef) {
+    closeDialog();
+  }
+}
+
+
+document.addEventListener("keydown", checkForEscapeKey);
+
+
+dialogRef.addEventListener("click", checkBackdropClick);

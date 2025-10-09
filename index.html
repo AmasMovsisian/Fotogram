@@ -13,36 +13,38 @@
 
 <body onload="init()">
   <header>
-    <a href="./index.html">
+    
+    <a class="limitation" href="./index.html">
       <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo" />
     </a>
   </header>
 
-  <main class="main">
+  <main class="main limitation">
     <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
 
     <section class="mainImagesContainer" id="mainImagesContainer">
     </section>
 
 
-   <dialog id="myImagesDialog">
+    <dialog id="myImagesDialog">
 
-     <button class="navButtonLeft" onclick="prevImage()">←</button>
+      <button class="navButtonLeft" onclick="prevImage()">←</button>
 
-    <img id="dialogImage" src="" alt="Preview" class="dialogImage">
+      <img id="dialogImage" src="" alt="Preview" class="dialogImage">
 
-    <button class="navButtonRight" onclick="nextImage()">→</button>
+      <button class="navButtonRight" onclick="nextImage()">→</button>
 
-  <button class="closeButton" onclick="closeDialog()">Schließen</button>
+      <button class="closeButton" onclick="closeDialog()">Schließen</button>
 
-  </dialog>
+    </dialog>
 
-<div id="mainImagesContainer"></div>
+    <div id="mainImagesContainer"></div>
 
   </main>
 
   <footer>
-    <a class="impressum" href="./impressum.html">Impressum / Datenschutz</a>
+    <div class="limitation">
+    <a class="impressum" href="./impressum.html">Impressum / Datenschutz</a></div>
   </footer>
 </body>
 
