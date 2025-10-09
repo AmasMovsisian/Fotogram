@@ -9,6 +9,8 @@ const myImagesRef = document.getElementById("mainImagesContainer");
 const dialogRef = document.getElementById("myImagesDialog");
 const dialogImage = document.getElementById("dialogImage");
 
+let currentIndex = 0;
+
 
 function init() {
 renderImage();
@@ -31,6 +33,7 @@ function renderImage(){
 
 
 function openDialog(i) {
+    currentIndex = i;
     const imageName = myImages[i];
     dialogImage.src = `./img/images/${imageName}`;
     dialogRef.showModal();
@@ -40,3 +43,22 @@ function openDialog(i) {
 function closeDialog() {
   dialogRef.close();
 }
+
+function nextImage() {
+  if (currentIndex < myImages.length - 1) {
+    currentIndex = currentIndex + 1;
+  } else {
+    currentIndex = 0; 
+  }
+  dialogImage.src = `./img/images/${myImages[currentIndex]}`;
+}
+
+function prevImage() {
+  if (currentIndex > 0) {
+    currentIndex = currentIndex - 1;
+  } else {
+    currentIndex = myImages.length - 1;
+  }
+  dialogImage.src = `./img/images/${myImages[currentIndex]}`;
+}
+

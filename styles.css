@@ -101,13 +101,15 @@ dialog[open] {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fff;
+  background-color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   overflow: hidden;
   flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 16px;
   height: auto;
   width: 450px;
   object-fit: cover;
@@ -121,17 +123,12 @@ dialog[open] {
   display: block;
   margin: 0 auto;
   object-fit: cover;
+  border-radius: 5px;
 }
 
-#dialogOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(6, 18, 44, 0.6); /* dein gewünschtes transparentes Dunkelblau */
-  z-index: 998;
-  display: none;
+dialog::backdrop {
+  background: #06122c6d;
+  backdrop-filter: blur(2px); /* Optional für schönen Effekt */
 }
 
 dialog[open] {
@@ -149,7 +146,7 @@ dialog[open] {
   background-color: #06122c;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 190px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -161,32 +158,56 @@ dialog[open] {
 }
 
 
-.navButton {
+.navButtonLeft {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  font-size: 34px;
+  background: none;
   border: none;
-  padding: 10px;
-  border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
-  z-index: 10;
-  transition: background-color 0.3s ease;
+  z-index: 2;
+  color: #06122c7e;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  padding-left: 17px;
+  border-radius: 10%;
+  left: 0px;
+  transition: all 0.7s ease;
+  background-color: transparent;
 }
 
-.navButton:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.navButtonLeft:hover {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
 }
 
-#prevButton {
-  left: 10px;
+
+
+
+.navButtonRight{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  color: #06122c7e;
+  border-radius: 10%;
+  padding-right: 17px;
+  right: 0px;
+  transition: all 0.7s ease;
+  background-color: transparent;
 }
 
-#nextButton {
-  right: 10px;
+.navButtonRight:hover {
+ color: rgb(255, 255, 255);
+ font-size: 48px;
 }
+
+
 
 /* Footer part */
 footer {
@@ -218,6 +239,69 @@ footer {
   .headlining {
     text-align: center;
   }
+}
+
+@media (max-width: 600px) {
+  dialog[open] {
+    width: 300px;
+    max-height: 520px;  
+    margin-top: 92px;
+  }
+
+  .dialogImage {
+  width: 100%;
+  max-width: 300px;
+  height: 480px;
+}
+
+.closeButton {
+  margin-top: 16px;
+  background-color: #06122c;
+  color: white;
+  border: none;
+  padding: 10px 115px;
+  border-radius: 5px;
+}
+}
+
+@media (max-width: 380px) {
+  dialog[open] {
+    width: 220px;
+    max-height: 460px;  
+    margin-top: 92px;
+  }
+
+  .dialogImage {
+  width: 100%;
+  max-width: 220px;
+  height: 400px;
+}
+
+.closeButton {
+  margin-top: 16px;
+  background-color: #06122c;
+  color: white;
+  border: none;
+  padding: 10px 76px;
+  border-radius: 5px;
+}
+
+.navButtonLeft{
+  font-size: 24px;
+} 
+
+.navButtonLeft:hover{
+  font-size: 32px;
+} 
+
+.navButtonRight{
+  font-size: 24px;
+} 
+
+.navButtonRight:hover{
+  font-size: 32px;
+} 
+
 }
 
 @media (max-width: 480px) {

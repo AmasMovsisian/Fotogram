@@ -26,8 +26,15 @@
 
 
    <dialog id="myImagesDialog">
-  <img id="dialogImage" src="" alt="Preview" class="dialogImage">
+
+     <button class="navButtonLeft" onclick="prevImage()">←</button>
+
+    <img id="dialogImage" src="" alt="Preview" class="dialogImage">
+
+    <button class="navButtonRight" onclick="nextImage()">→</button>
+
   <button class="closeButton" onclick="closeDialog()">Schließen</button>
+
   </dialog>
 
 <div id="mainImagesContainer"></div>
