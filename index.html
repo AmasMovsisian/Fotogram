@@ -13,13 +13,15 @@
 
 <body onload="init()">
   <header>
-    
-    <a class="limitation" href="./index.html">
+    <div class="limitation"> 
+    <a href="./index.html">
       <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo" />
     </a>
+    </div>
   </header>
 
-  <main class="main limitation">
+  <main class="main">
+    <div class="limitation">
     <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
 
     <section class="mainImagesContainer" id="mainImagesContainer">
@@ -28,18 +30,25 @@
 
     <dialog id="myImagesDialog">
 
+      <div class="dialogHeader limitationDialog">
+
+      <p id="description" class="description"></p>
+      
+      <button class="closeButton" onclick="closeDialog()">Schließen</button>
+
+      </div>
+
       <button class="navButtonLeft" onclick="prevImage()">←</button>
 
       <img id="dialogImage" src="" alt="Preview" class="dialogImage">
 
       <button class="navButtonRight" onclick="nextImage()">→</button>
 
-      <button class="closeButton" onclick="closeDialog()">Schließen</button>
 
     </dialog>
 
     <div id="mainImagesContainer"></div>
-
+    </div>
   </main>
 
   <footer>

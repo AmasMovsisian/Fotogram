@@ -15,14 +15,15 @@ body {
 
 .limitation{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.limitationDialog{
+  max-width: 1440px;
 }
 
 /* Header part */
 header {
-  display: flex;
-  justify-content: start;
-  align-items: start;
   background-color: #06122c;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -104,32 +105,30 @@ dialog {
 
 dialog[open] {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   border: none;
   border-radius: 7px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   overflow: hidden;
-  flex-direction: column;
   margin-top: 16px;
   margin-bottom: 16px;
-  height: auto;
+  height: 750px;
   width: 450px;
-  object-fit: cover;
+  padding: 16px;
 }
-
 
 .dialogImage {
-  width: 100%;
-  max-width: 700px;
-  height: 850px;
-  display: block;
-  margin: 0 auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
+  display: block;
 }
+
+
 
 dialog::backdrop {
   background: #06122c6d;
@@ -145,13 +144,14 @@ dialog[open] {
 
 .closeButton {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-start;
   margin-top: 16px;
+  margin-bottom: 16px;
   background-color: #06122c;
   color: white;
   border: none;
-  padding: 10px 190px;
+  padding: 8px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -172,12 +172,11 @@ dialog[open] {
   border: none;
   cursor: pointer;
   z-index: 2;
-  color: #06122c7e;
-  padding-left: 17px;
+  color:black;
   border-radius: 10%;
   left: 0px;
   transition: all 0.7s ease;
-  background-color: transparent;
+  background-color: #ffffffa8;
   outline: none;
 }
 
@@ -198,12 +197,11 @@ dialog[open] {
   border: none;
   cursor: pointer;
   z-index: 2;
-  color: #06122c7e;
+  color: black;
   border-radius: 10%;
-  padding-right: 17px;
   right: 0px;
   transition: all 0.7s ease;
-  background-color: transparent;
+  background-color: #ffffffcf;
   outline: none;
 }
 
@@ -212,13 +210,24 @@ dialog[open] {
  font-size: 48px;
 }
 
+.dialogHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.description{
+  font-weight: 700;
+  color: #06122C;
+  text-align: center;
+}
+
+
 
 
 /* Footer part */
 footer {
-  display: flex;
-  justify-content: start;
-  align-items: start;
   background-color: #06122c;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -233,99 +242,46 @@ footer {
   font-weight: 700;
 }
 
-
-@media (max-width: 944px) {
-  .mainImagesContainer {
-    justify-content: center;
-  }
+@media (max-width: 668px) {
+.mainImagesContainer{
+  justify-content: center;
 }
 
-@media (max-width: 624px) {
-  .headlining {
-    text-align: center;
-  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 536px) {
+
+dialog[open] {
+    height: 690px;
+    width: 390px;
+}
+}
+
+
+@media (max-width: 472px) {
   dialog[open] {
-    width: 300px;
-    max-height: 520px;  
-    margin-top: 92px;
-  }
-
-  .dialogImage {
-  width: 100%;
-  max-width: 300px;
-  height: 480px;
-}
-
-.closeButton {
-  margin-top: 16px;
-  background-color: #06122c;
-  color: white;
-  border: none;
-  padding: 10px 115px;
-  border-radius: 5px;
+    height: 650px;
+    width: 350px;
 }
 }
 
-@media (max-width: 380px) {
-  dialog[open] {
+@media (max-width: 424px) {
+    dialog[open] {
+    height: 600px;
+    width: 280px;
+}
+
+.logo{
+   width: 180px;
+  height: auto;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+}
+
+@media (max-width: 344px) {
+    dialog[open] {
+    height: 420px;
     width: 220px;
-    max-height: 460px;  
-    margin-top: 92px;
-  }
-
-  .dialogImage {
-  width: 100%;
-  max-width: 220px;
-  height: 400px;
 }
-
-.closeButton {
-  margin-top: 16px;
-  background-color: #06122c;
-  color: white;
-  border: none;
-  padding: 10px 76px;
-  border-radius: 5px;
-}
-
-.navButtonLeft{
-  font-size: 24px;
-} 
-
-.navButtonLeft:hover{
-  font-size: 32px;
-} 
-
-.navButtonRight{
-  font-size: 24px;
-} 
-
-.navButtonRight:hover{
-  font-size: 32px;
-} 
-
-}
-
-@media (max-width: 480px) {
-  .headlining {
-    text-align: center;
-  }
-
-  footer {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 376px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  .logo {
-    width: 160px;
-    height: auto;
-  }
 }

@@ -13,13 +13,15 @@ body{
     min-height: 100vh;
 }
 
+.limitation{
+  max-width: 1440px;
+  margin: auto;
+}
 
 /* Header part */
 
 header{
-    display: flex;
-    justify-content: start;
-    align-items: start;
+
     background-color: #06122c;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -60,28 +62,42 @@ header{
     margin-right: 64px;
     margin-top: 32px;
     margin-bottom: 32px;
+    
 }
 
+.text{
+    margin-left: 64px;
+    margin-right: 64px;
+}
 
 /* The image section ends here */
 
 footer{
-    display: flex;
-    justify-content: start;
-    align-items: start;
     background-color: #06122c;
     padding-top: 16px;
     padding-bottom: 16px;
     box-shadow: 0px 0px 7px black;
   
+  
 }
 
 .impressum{
-    margin-left: 64px;
-    margin-right: 64px;
     text-decoration: none;
     color: white;
     font-weight: 700;
+    margin-left: 64px;
+    margin-right: 64px;
+    
+}
+
+@media (max-width:1920px) {
+
+    .text{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+    
 }
 
 @media (max-width:480px) {
@@ -122,9 +138,14 @@ footer{
     font-size: 18px;
  }
 
- .impressum {
-    margin-left: 0px;
-    margin-right: 0px;
-}
+.footer{
+        justify-content: center;
+    }
 
+    .impressum{
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        margin-right: 16px;
+    }
 }
