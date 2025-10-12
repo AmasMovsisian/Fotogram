@@ -13,47 +13,51 @@
 
 <body onload="init()">
   <header>
-    <div class="limitation"> 
-    <a href="./index.html">
-      <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo" />
-    </a>
+    <div class="limitation">
+      <a href="./index.html">
+        <img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo" />
+      </a>
     </div>
   </header>
 
   <main class="main">
     <div class="limitation">
-    <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
+      <h1 class="headlining">A Symphony Written by the Forces of Nature</h1>
 
-    <section class="mainImagesContainer" id="mainImagesContainer">
-    </section>
-
-
-    <dialog id="myImagesDialog">
-
-      <div class="dialogHeader limitationDialog">
-
-      <p id="description" class="description"></p>
-      
-      <button class="closeButton" onclick="closeDialog()">Schließen</button>
-
-      </div>
-
-      <button class="navButtonLeft" onclick="prevImage()">←</button>
-
-      <img id="dialogImage" src="" alt="Preview" class="dialogImage">
-
-      <button class="navButtonRight" onclick="nextImage()">→</button>
+      <section class="mainImagesContainer" id="mainImagesContainer">
+      </section>
 
 
-    </dialog>
+      <dialog id="myImagesDialog">
 
-    <div id="mainImagesContainer"></div>
+        <div class="fixedSizeForImages">
+
+        <div class="dialogHeader limitationDialog">
+
+          <p id="description" class="description"></p>
+
+          <button class="closeButton" onclick="closeDialog()">Schließen</button>
+
+        </div>
+
+        <button class="navButtonLeft" onclick="prevImage()">←</button>
+
+        <img id="dialogImage" src="" alt="Preview" class="dialogImage">
+
+        <button class="navButtonRight" onclick="nextImage()">→</button>
+
+        </div>
+
+      </dialog>
+
+      <div id="mainImagesContainer"></div>
     </div>
   </main>
 
   <footer>
     <div class="limitation">
-    <a class="impressum" href="./impressum.html">Impressum / Datenschutz</a></div>
+      <a class="impressum" href="./impressum.html">Impressum / Datenschutz</a>
+    </div>
   </footer>
 </body>
 
