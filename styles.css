@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -13,12 +14,12 @@ body {
   min-height: 100vh;
 }
 
-.limitation{
+.limitation {
   max-width: 1440px;
   margin: auto;
 }
 
-.limitationDialog{
+.limitationDialog {
   max-width: 1440px;
 }
 
@@ -92,7 +93,7 @@ header {
 }
 
 dialog {
-  display: none; 
+  display: none;
 }
 
 dialog[open] {
@@ -100,7 +101,8 @@ dialog[open] {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color:  #F4F7FA;;
+  background-color: #F4F7FA;
+  ;
   border: none;
   border-radius: 7px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -108,7 +110,7 @@ dialog[open] {
   padding: 16px;
 }
 
-.fixedSizeForImages{
+.fixedSizeForImages {
   height: 760px;
   width: 620px;
   display: flex;
@@ -163,7 +165,7 @@ dialog[open] {
   border: none;
   cursor: pointer;
   z-index: 2;
-  color:black;
+  color: black;
   border-radius: 10%;
   left: 0px;
   transition: all 0.7s ease;
@@ -171,11 +173,11 @@ dialog[open] {
 }
 
 .navButtonLeft:hover {
-  color:#06122C;
+  color: #06122C;
   font-size: 40px;
 }
 
-.navButtonRight{
+.navButtonRight {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -192,18 +194,18 @@ dialog[open] {
 }
 
 .navButtonRight:hover {
- color:#06122C;
- font-size: 40px;
+  color: #06122C;
+  font-size: 40px;
 }
 
-.dialogHeader{
+.dialogHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.description{
+.description {
   font-weight: 700;
   color: #06122C;
   text-align: center;
@@ -226,135 +228,135 @@ footer {
 }
 
 @media (max-width: 668px) {
-.mainImagesContainer{
-  justify-content: center;
-}
+  .mainImagesContainer {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 712px) {
-.fixedSizeForImages{
-  height: 620px;
-  width: 480px;
-}
+  .fixedSizeForImages {
+    height: 620px;
+    width: 480px;
+  }
 
-.description{
-  margin-right: 26px;
-}
+  .description {
+    margin-right: 26px;
+  }
 
-.closeButton{
-  margin-right: 26px;
-}
+  .closeButton {
+    margin-right: 26px;
+  }
 
-.navButtonRight{
-  font-size: 24px;
-}
+  .navButtonRight {
+    font-size: 24px;
+  }
 
-.navButtonRight:hover {
- font-size: 32px;
-}
+  .navButtonRight:hover {
+    font-size: 32px;
+  }
 
-.navButtonLeft{
-  font-size: 24px;
-}
+  .navButtonLeft {
+    font-size: 24px;
+  }
 
-.navButtonLeft:hover {
- font-size: 32px;
-}
+  .navButtonLeft:hover {
+    font-size: 32px;
+  }
 }
 
 
 @media (max-width: 552px) {
-.fixedSizeForImages{
+  .fixedSizeForImages {
     height: 580px;
     width: 340px;
-}
+  }
 
-.description{
-  margin-right: 0px;
-  margin-left: 0px;
-  margin: 0px;
-}
+  .description {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin: 0px;
+  }
 
-.closeButton{
-  margin-right: 0px;
-  margin: 0px;
-}
+  .closeButton {
+    margin-right: 0px;
+    margin: 0px;
+  }
 
-.dialogHeader{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-}
+  .dialogHeader {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 
-.navButtonRight{
-  font-size: 24px;
-}
+  .navButtonRight {
+    font-size: 24px;
+  }
 
-.navButtonRight:hover {
- font-size: 28px;
-}
+  .navButtonRight:hover {
+    font-size: 28px;
+  }
 
-.navButtonLeft{
-  font-size: 24px;
-}
+  .navButtonLeft {
+    font-size: 24px;
+  }
 
-.navButtonLeft:hover {
- font-size: 28px;
-}
+  .navButtonLeft:hover {
+    font-size: 28px;
+  }
 
 }
 
 @media (max-width: 416px) {
-.fixedSizeForImages {
+  .fixedSizeForImages {
     height: 520px;
     width: 320px;
-}
+  }
 
-.logo{
-   width: 180px;
-  height: auto;
-  margin-left: 48px;
-  margin-right: 48px;
-}
+  .logo {
+    width: 180px;
+    height: auto;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
 
-.navButtonRight{
-  font-size: 20px;
-}
+  .navButtonRight {
+    font-size: 20px;
+  }
 
-.navButtonRight:hover {
- font-size: 24px;
-}
+  .navButtonRight:hover {
+    font-size: 24px;
+  }
 
-.navButtonLeft{
-  font-size: 20px;
-}
+  .navButtonLeft {
+    font-size: 20px;
+  }
 
-.navButtonLeft:hover {
- font-size: 24px;
-}
+  .navButtonLeft:hover {
+    font-size: 24px;
+  }
 
 }
 
 @media (max-width: 408px) {
-.fixedSizeForImages{
+  .fixedSizeForImages {
     height: 480px;
     width: 260px;
-}
+  }
 
-.navButtonRight{
-  font-size: 18px;
-}
+  .navButtonRight {
+    font-size: 18px;
+  }
 
-.navButtonRight:hover {
- font-size: 22px;
-}
+  .navButtonRight:hover {
+    font-size: 22px;
+  }
 
-.navButtonLeft{
-  font-size: 18px;
-}
+  .navButtonLeft {
+    font-size: 18px;
+  }
 
-.navButtonLeft:hover {
- font-size: 22px;
-}
+  .navButtonLeft:hover {
+    font-size: 22px;
+  }
 }
